@@ -62,7 +62,7 @@ p {
 	height: 60px;
 	word-break: break-all;
 }
-#output p{
+#output-value{
 	word-break: break-all;
 }
 .keyboard {
