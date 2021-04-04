@@ -1,0 +1,128 @@
+body {
+	/*	background: linear-gradient(
+		123deg,
+		rgb(165, 172, 210),
+		rgb(197, 206, 200),
+		rgb(132, 160, 202)
+	); */
+	background: linear-gradient(
+		to left,
+		white,
+		rgb(201, 169, 174),
+		rgb(107, 98, 161)
+	);
+	height: 100vh;
+	margin: 0;
+}
+.simp {
+	color: white;
+	text-align: center;
+	align-content: center;
+	width: 100%;
+	position: relative;
+	font-size: xx-large;
+	background-color: rgba(126, 138, 160, 0.329);
+
+	font-weight: bold;
+	font-family: monospace;
+	letter-spacing: 5px;
+	line-height: 55px;
+	border-radius: 15px;
+}
+
+.container {
+	width: 320px;
+	height: 520px;
+	background: linear-gradient(
+		rgb(235, 224, 192),
+		rgb(125, 160, 226),
+		rgb(103, 75, 111)
+	);
+	margin: auto;
+	top: 10%;
+	position: relative;
+	border-radius: 10px;
+	box-shadow: 0 0 12px 1px grey;
+	font-family: monospace;
+}
+
+.display {
+	height: 120px;
+	text-align: right;
+}
+p {
+	padding: 0;
+	margin: 0;
+}
+#history {
+	margin: 10px 20px;
+	font-size: 15px;
+	color: rgb(131, 146, 146);
+}
+
+#output {
+	margin: 10px 20px;
+	font-size: 30px;
+	height: 60px;
+}
+.keyboard {
+	height: 400px;
+	align-items: center;
+	text-align: center;
+}
+.operator,
+.empty,
+.number {
+	width: 50px;
+	float: left;
+	height: 50px;
+	margin: 15px;
+
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.operator,
+.number {
+	background-color: rgba(73, 71, 71, 0.212);
+	font-weight: bold;
+	color: ghostwhite;
+	text-shadow: 0 0 3px rgb(1, 53, 17);
+	font-size: 19px;
+}
+.operator:hover,
+.number:hover {
+	box-shadow: 0 0 5px 0 deeppink;
+	font-size: 16px;
+	cursor: pointer;
+}
+.keyboard > div:nth-child(4) {
+	background-color: rgba(241, 163, 218, 0.345);
+	font-size: 21;
+}
+.keyboard > div:nth-child(8) {
+	background-color: rgba(180, 198, 223, 0.281);
+}
+.keyboard > div:nth-child(12) {
+	background-color: rgba(157, 208, 228, 0.466);
+}
+.keyboard > div:nth-child(16) {
+	background-color: rgba(228, 203, 139, 0.514);
+}
+.keyboard > div:nth-child(20) {
+	background-color: rgba(174, 226, 125, 0.527);
+}
+.number {
+	background-color: rgba(128, 128, 128, 0.062);
+}
+@media (max-width: 500px) {
+	.container {
+		margin: 0 auto;
+		left: 0;
+		top: 5%;
+	}
+	body {
+		background: white;
+	}
+}
