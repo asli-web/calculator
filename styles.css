@@ -28,7 +28,7 @@ body {
 	width: 320px;
 	height: 520px;
 	background: linear-gradient(
-		rgb(235, 224, 192),
+		rgb(223, 192, 235),
 		rgb(125, 160, 226),
 		rgb(103, 75, 111)
 	);
@@ -53,7 +53,6 @@ p {
 	margin: 10px 20px;
 	font-size: 15px;
 	color: rgb(131, 146, 146);
-	
 }
 
 #output {
@@ -62,7 +61,7 @@ p {
 	height: 60px;
 	word-break: break-all;
 }
-#output-value{
+#output-value {
 	word-break: break-all;
 }
 .keyboard {
