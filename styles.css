@@ -1,4 +1,18 @@
 body {
+	background: -webkit-gradient(
+		linear,
+		right top,
+		left top,
+		from(white),
+		color-stop(rgb(201, 169, 174)),
+		to(rgb(107, 98, 161))
+	);
+	background: -o-linear-gradient(
+		right,
+		white,
+		rgb(201, 169, 174),
+		rgb(107, 98, 161)
+	);
 	background: linear-gradient(
 		to left,
 		white,
@@ -11,6 +25,7 @@ body {
 .simp {
 	color: white;
 	text-align: center;
+	-ms-flex-line-pack: center;
 	align-content: center;
 	width: 100%;
 	position: relative;
@@ -27,6 +42,19 @@ body {
 .container {
 	width: 320px;
 	height: 520px;
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(rgb(223, 192, 235)),
+		color-stop(rgb(125, 160, 226)),
+		to(rgb(103, 75, 111))
+	);
+	background: -o-linear-gradient(
+		rgb(223, 192, 235),
+		rgb(125, 160, 226),
+		rgb(103, 75, 111)
+	);
 	background: linear-gradient(
 		rgb(223, 192, 235),
 		rgb(125, 160, 226),
@@ -36,6 +64,7 @@ body {
 	top: 10%;
 	position: relative;
 	border-radius: 10px;
+	-webkit-box-shadow: 0 0 12px 1px grey;
 	box-shadow: 0 0 12px 1px grey;
 	font-family: monospace;
 }
@@ -66,6 +95,8 @@ p {
 }
 .keyboard {
 	height: 400px;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	text-align: center;
 }
@@ -78,8 +109,14 @@ p {
 	margin: 15px;
 
 	border-radius: 50%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 .operator,
@@ -92,6 +129,7 @@ p {
 }
 .operator:hover,
 .number:hover {
+	-webkit-box-shadow: 0 0 5px 0 deeppink;
 	box-shadow: 0 0 5px 0 deeppink;
 	font-size: 16px;
 	cursor: pointer;
